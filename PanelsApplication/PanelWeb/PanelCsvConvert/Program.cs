@@ -21,7 +21,10 @@ namespace PanelCsvConvert
                 var sb = new StringBuilder();
                 sb.AppendFormat("Entry ID : {0}", a.EntryId).AppendLine();
                 sb.AppendFormat("Entry Date : {0}", a.EntryDate).AppendLine();
+                sb.AppendFormat("Presenter Name : {0} {1}", a.NameFirst, a.NameLast).AppendLine();
+                sb.AppendFormat("Other Presenters : {0}", a.NamesOfOtherPresenters).AppendLine();
                 sb.AppendFormat("Title : {0}", a.Title).AppendLine();
+                sb.AppendFormat("Phone #: {0}", a.Phone).AppendLine();
                 sb.AppendFormat("Content Rating : {0}", a.ContentRating).AppendLine();
                 sb.AppendFormat("Preferred Panel Duration : {0}", a.PreferredPanelDuration).AppendLine();
                 sb.AppendFormat("Schedule Preference : {0}", a.SchedulePreference).AppendLine();
